@@ -15,7 +15,7 @@ import pika
 import sys
 
 message = "Hello from test!"
-queue_name = "Jones_Queue"
+queue_name = "hello"
 def send_message(host: str, queue_name: str, message: str):
     """
     Creates and sends a message to the queue each execution.
