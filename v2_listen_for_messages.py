@@ -1,4 +1,7 @@
 """
+Lee Jones
+1/31/2023
+Module 03 - A3: Decoupling with a Message Broker
 
 Always customize this docstring. 
 
@@ -89,6 +92,6 @@ def main(hn: str = "localhost"):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
-    main("localhostttt")
+    main("localhost")
   
      

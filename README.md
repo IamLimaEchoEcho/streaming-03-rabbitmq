@@ -1,5 +1,10 @@
 # streaming-03-rabbitmq
 
+## 
+    Lee Jones
+    1/31/2023
+    Module 03 - A3: Decoupling with a Message Broker
+
 Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary
 
 ## Before You Begin
@@ -38,7 +43,8 @@ Once it runs and finishes, we can reuse the terminal.
 1. Run the file.
 
 You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? 
+Once it runs successfully, will it terminate on its own? No
+How do you know? Because I didn't get my CMD prompt back
 As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
@@ -77,14 +83,17 @@ Each of the version 2 programs include an error as well.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
 1. Imports should be one per line - why?
+    Readability and if errors occur, it is easier to diagnose. 
 1. Then, define your functions.
 1. Functions are reuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
 1. Which of the 4 files will always close() the connection?
+    Both the v1_emit_message and v2_emit_message will always close the connection. 
 1. Search GitHub for if __name__ == "__main__":
 1. How many hits did you get? 
+    40M in code
 1. Learn and understand this common Python idiom.
 
 ## Reference
@@ -95,3 +104,6 @@ Each of the version 2 programs include an error as well.
 ## Multiple Terminals
 
 ![Mac Example](screenshot.png)
+
+## Screenshot: 
+[![Alt text](https://github.com/IamLimaEchoEcho/streaming-03-rabbitmq/blob/main/screenshot_JonesModule03.png "Lee Jones")

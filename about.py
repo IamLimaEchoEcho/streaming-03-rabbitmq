@@ -1,4 +1,9 @@
 """
+
+    Lee Jones
+    1/31/2023
+    Module 03 - A3: Decoupling with a Message Broker
+
 This file provides standard information to
 help with debugging. 
 

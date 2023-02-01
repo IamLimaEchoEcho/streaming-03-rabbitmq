@@ -1,4 +1,8 @@
 """
+    Lee Jones
+    1/31/2023
+    Module 03 - A3: Decoupling with a Message Broker
+
     This program sends a message to a queue on the RabbitMQ server.
 
     Author: Denise Case
@@ -10,6 +14,8 @@
 import pika
 import sys
 
+message = "Hello from test!"
+queue_name = "Jones_Queue"
 def send_message(host: str, queue_name: str, message: str):
     """
     Creates and sends a message to the queue each execution.
@@ -18,9 +24,10 @@ def send_message(host: str, queue_name: str, message: str):
     Parameters:
         queue_name (str): the name of the queue
         message (str): the message to be sent to the queue
+        
 
     """
-
+    
     try:
         # create a blocking connection to the RabbitMQ server
         conn = pika.BlockingConnection(pika.ConnectionParameters(host))
@@ -44,4 +51,4 @@ def send_message(host: str, queue_name: str, message: str):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
-    send_message("llllocalhost","hello","Hello World!")
+    send_message("localhost","hello",message)
